@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GeoVeo</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css"/>
+    <style>
+        body {
+          background-image: url('./igeobackground.webp');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          height: 100vh;
+        }
+        .logo-container {
+            text-align: center;
+            padding: 10px;
+        }
+        #weather-info {
+            color: white;
+        }
+        label {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="./igeo-logo-.webp" alt="Company Logo" />
+    </div>
+    <input type="checkbox" id="worldview-1" data-satid="WORLDVIEW 1">
+    <label for="worldview-1">WORLDVIEW 1</label>
+    <input type="checkbox" id="worldview-2" data-satid="WORLDVIEW 2">
+    <label for="worldview-2">WORLDVIEW 2</label>
+    <input type="checkbox" id="worldview-3" data-satid="WORLDVIEW 3">
+    <label for="worldview-3">WORLDVIEW-3</label>
+    <div id="mapid" style="width: 100%; height: 500px;"></div>
+    <div id="weather-info"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+    <script src="./map.js"></script>
+</body>
+</html>
